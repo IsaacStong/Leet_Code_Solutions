@@ -27,3 +27,16 @@ def list_to_int(l1):
     else:
         return l1.val + (10*list_to_int(l1.next))
 
+
+b1 = ListNode(6)
+b2 = ListNode(2, b1)
+b3 = ListNode(3, b2)
+a1 = ListNode(3)
+a2 = ListNode(2, a1)
+a3 = ListNode(1, a2)
+lel = add_two_numbers(b3, a3)
+
+for i in range(3):
+     print(lel.val)
+     lel = lel.next
+
